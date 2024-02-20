@@ -45,7 +45,8 @@ const changeBg = (type) => {
   } else if (type == 2) {
     bgUrl.value = "https://api.aixiaowai.cn/gqapi/gqapi.php";
   } else if (type == 3) {
-    bgUrl.value = "https://api.aixiaowai.cn/api/api.php";
+    // bgUrl.value = "https://api.aixiaowai.cn/api/api.php";
+    bgUrl.value = "https://cdn.seovx.com/?mom=302";
   }
 };
 
@@ -76,7 +77,7 @@ const imgLoadError = () => {
       fill: "#efefef",
     }),
   });
-  bgUrl.value = `/images/background${bgRandom}.jpg`;
+  bgUrl.value = `/images/background${1}.jpg`;
 };
 
 onMounted(() => {

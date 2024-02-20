@@ -17,12 +17,7 @@
         </section>
       </div>
       <!-- 移动端菜单按钮 -->
-      <Icon
-        class="menu"
-        size="24"
-        v-show="!store.backgroundShow"
-        @click="store.mobileOpenState = !store.mobileOpenState"
-      >
+      <Icon class="menu" size="24" v-show="!store.backgroundShow" @click="store.mobileOpenState = !store.mobileOpenState">
         <component :is="store.mobileOpenState ? CloseSmall : HamburgerButton" />
       </Icon>
       <!-- 页脚 -->
@@ -87,7 +82,19 @@ onMounted(() => {
     });
     return false;
   };
-
+  document.onkeydown = (event) => {
+    if (event.key === 'F12') {
+      event.preventDefault();
+      ElMessage({
+        message: "为了浏览体验，本站禁用f12",
+        grouping: true,
+        duration: 2000,
+        type:'info'
+      
+      });
+      return false;
+    }
+  };
   // 鼠标中键事件
   window.addEventListener("mousedown", (event) => {
     if (event.button == 1) {
@@ -107,7 +114,7 @@ onMounted(() => {
   const styleTitle1 = "font-size: 20px;font-weight: 600;color: rgb(244,167,89);";
   const styleTitle2 = "font-size:12px;color: rgb(244,167,89);";
   const styleContent = "color: rgb(30,152,255);";
-  const title1 = "無名の主页";
+  const title1 = "";
   const title2 = `
  _____ __  __  _______     ____     __
 |_   _|  \\/  |/ ____\\ \\   / /\\ \\   / /
@@ -135,10 +142,12 @@ onBeforeUnmount(() => {
   transition: transform 0.3s;
   animation: fade-blur-main-in 0.65s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards;
   animation-delay: 0.5s;
+
   .container {
     width: 100%;
     height: 100vh;
     margin: 0 auto;
+
     .all {
       width: 100%;
       height: 100%;
@@ -148,6 +157,7 @@ onBeforeUnmount(() => {
       justify-content: center;
       align-items: center;
     }
+
     .more {
       position: fixed;
       top: 0;
@@ -159,10 +169,12 @@ onBeforeUnmount(() => {
       z-index: 2;
       animation: fade 0.5s;
     }
+
     @media (max-width: 1200px) {
       padding: 0 2vw;
     }
   }
+
   .menu {
     position: fixed;
     display: flex;
@@ -177,12 +189,15 @@ onBeforeUnmount(() => {
     border-radius: 6px;
     transition: transform 0.3s;
     animation: fade 0.5s;
+
     &:active {
       transform: scale(0.95);
     }
+
     .i-icon {
       transform: translateY(2px);
     }
+
     @media (min-width: 721px) {
       display: none;
     }

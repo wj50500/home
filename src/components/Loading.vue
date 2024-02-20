@@ -4,9 +4,10 @@
       <div class="loader-circle" />
       <div class="loader-text">
         <span class="name">
-          {{ siteName }}
+          <!-- {{ siteName }} -->
+          此情可待成追忆，只是当时已惘然。
         </span>
-        <span class="tip"> 加载中 </span>
+        <span class="tip"> 正在进入... </span>
       </div>
     </div>
     <div class="loader-section section-left" />
@@ -20,7 +21,7 @@ import { mainStore } from "@/store";
 const store = mainStore();
 
 // 配置
-const siteName = import.meta.env.VITE_SITE_NAME;
+// const siteName = import.meta.env.VITE_SITE_NAME;
 </script>
 
 <style lang="scss" scoped>

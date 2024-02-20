@@ -1,37 +1,72 @@
 [
   {
     "icon": "Blog",
-    "name": "博客",
+    "name": "待添加",
     "link": "https://blog.imsyy.top/"
   },
   {
     "icon": "Cloud",
-    "name": "网盘",
+    "name": "待添加",
     "link": "https://pan.imsyy.top/"
   },
   {
     "icon": "CompactDisc",
-    "name": "音乐",
+    "name": "待添加",
     "link": "https://music.imsyy.top/"
   },
   {
     "icon": "Compass",
-    "name": "起始页",
+    "name": "待添加",
     "link": "https://nav.imsyy.top/"
   },
   {
     "icon": "Book",
-    "name": "网址集",
+    "name": "待添加",
     "link": "https://web.imsyy.top/"
   },
   {
     "icon": "Fire",
-    "name": "今日热榜",
+    "name": "待添加",
     "link": "https://hot.imsyy.top/"
   },
   {
     "icon": "LaptopCode",
-    "name": "站点监测",
+    "name": "待添加",
+    "link": "https://status.imsyy.top/"
+  },
+  {
+    "icon": "Blog",
+    "name": "待添加",
+    "link": "https://blog.imsyy.top/"
+  },
+  {
+    "icon": "Cloud",
+    "name": "待添加",
+    "link": "https://pan.imsyy.top/"
+  },
+  {
+    "icon": "CompactDisc",
+    "name": "待添加",
+    "link": "https://music.imsyy.top/"
+  },
+  {
+    "icon": "Compass",
+    "name": "待添加",
+    "link": "https://nav.imsyy.top/"
+  },
+  {
+    "icon": "Book",
+    "name": "待添加",
+    "link": "https://web.imsyy.top/"
+  },
+  {
+    "icon": "Fire",
+    "name": "待添加",
+    "link": "https://hot.imsyy.top/"
+  },
+  {
+    "icon": "LaptopCode",
+    "name": "待添加",
     "link": "https://status.imsyy.top/"
   }
 ]
